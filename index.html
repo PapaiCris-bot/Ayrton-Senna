@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>A Beleza do Automobilismo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo-senna.png" alt="Logotipo do automobilismo" class="nav-img" loading="lazy" width="auto" height="160" style="object-fit:contain;">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao">
+                  Acessibilidade
+                </button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
+                  <button id="aumentar-fonte" class="btn btn-primary fw-bold">+</button>       
+                  <button id="diminuir-fonte" class="btn btn-primary fw-bold">-</button>
+                  <button id="alterna-contraste" class="btn btn-primary fw-bold">
+                     <i class="bi bi-shadows"></i>
+                  </button>
+                </div>
+              </div>                         
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">A beleza do automobilismo: paixão, velocidade e emoção</h1>
+                    <img src="img/senna.png" alt="Piloto comemorando vitória no pódio de Fórmula 1" class="mb-3" width="auto"
+                        height="300" loading="lazy">
+                    <a href="#automobilismo"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Conheça!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="automobilismo" class="my-5 pt-6 secao-Racionais">
+            <div class="container d-flex align-items-center flex-row-reverse">
+                <div class="col-5 text-center">
+                    <img src="img/6.jpg" 
+                        class="rounded-pill img-fluid shadow" 
+                        width="546" height="662" loading="lazy"
+                        alt="Carro de Fórmula 1 em alta velocidade na pista">
+                </div>
+                <div class="col-7">
+                    <h2>A Beleza do Automobilismo</h2>
+                    <p class="p-2">
+                        O automobilismo é um espetáculo de velocidade, precisão e paixão. Das pistas históricas às modernas, pilotos e equipes desafiam limites em busca da vitória, proporcionando momentos inesquecíveis para fãs ao redor do mundo. 
+                        Mais do que corridas, o automobilismo representa superação, tecnologia e emoção, inspirando gerações e celebrando a beleza da competição sobre rodas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-1 mt-3 fundo-galeria ">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-6">
+                        <img src="img/1.jpg"
+                            class="img-fluid rounded-5" loading="lazy"
+                            alt="Pilotos alinhados no grid de largada, prontos para a corrida">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/2.jpg" class="img-fluid rounded-5"
+                            loading="lazy"
+                            alt="Carro de Fórmula 1 fazendo curva em alta velocidade">
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-5">
+                            <img src="img/3.jpg"
+                                class="img-fluid rounded-5" loading="lazy"
+                                alt="Equipe comemorando vitória nos boxes">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="img/5.jpg" class="img-fluid rounded-5"
+                                loading="lazy"
+                                alt="Piloto levantando troféu de campeão de corrida">
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6">
+                                <img src="img/8.png"
+                                    class="img-fluid rounded-5" loading="lazy"
+                                    alt="Capacete de corrida com design marcante">
+                            </div>
+                            <div class="col-md-5">
+                                <img src="img/9.png" class="img-fluid rounded-5"
+                                    loading="lazy"
+                                    alt="Pit stop rápido durante a corrida">
+                            </div>
+                            <div class="row justify-content-md-center">
+                                <div class="col-md-5">
+                                    <img src="img/11.jpg"
+                                        class="img-fluid rounded-5" loading="lazy"
+                                        alt="Piloto sorrindo ao lado de seu carro de Fórmula 1">
+                                </div>
+                                <div class="col-md-6">
+                                    <img src="img/10.jpg" class="img-fluid rounded-5"
+                                        loading="lazy"
+                                        alt="Piloto recebendo medalha no pódio da Fórmula 1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form id="contato-form">
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Siga nossas redes para mais sobre o automobilismo:</p>
+        <i class="bi bi-whatsapp" style="color: #25D366;"></i>
+        <i class="bi bi-instagram" style="color: #E1306C;"></i>
+        <i class="bi bi-tiktok" style="color: #000000;"></i>
+        <i class="bi bi-facebook" style="color: #1877F3;"></i>
+        <i class="bi bi-playstation" style="color: #003087;"></i>
+        <i class="bi bi-nintendo-switch" style="color: #E60012;"></i>
+        <p class="mt-3">Site feito por Jian. Uma homenagem à beleza do automobilismo, celebrando emoção, velocidade e paixão pelas pistas!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- I S2 Julia -->

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --amarelo-auto: #ffe600;
+    --verde-auto: #009739;
+    --azul-auto: #002664;
+    --preto-auto: #222;
+    --cinza-auto: #f5f5f5;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffff00;
+    --conquista: #ffe600;
+}
+
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, var(--amarelo-auto) 0%, var(--azul-auto) 100%);
+    transition: background 0.8s cubic-bezier(.4,0,.2,1);
+    color: #fff;
+}
+
+header {
+    background-color: var(--verde-auto);
+}
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: var(--amarelo-auto);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.inicio-fundo {
+    background-image: url('img/7.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 0 #0008;
+    border: 4px solid var(--amarelo-auto);
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--verde-auto);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 0 10px var(--amarelo-auto);
+    letter-spacing: 1px;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--amarelo-auto), 2px 2px 8px #000;
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--verde-auto);
+    text-shadow: 1px 1px 2px #000;
+}
+
+#galeria .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+#galeria .col-md-4 {
+    flex: 0 0 calc(33.333% - 1rem); 
+    max-width: calc(33.333% - 1rem);
+    padding: 0;
+}
+
+#galeria img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    object-position: center; 
+    border: 3px solid var(--amarelo-auto);
+    box-shadow: 0 0 10px #0007;
+}
+
+
+#galeria {
+    background-color: var(--cinza-auto);
+    color: var(--verde-auto);
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: var(--preto-auto);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000a;
+    font-weight: bold;
+    color: #fff;
+    border: 2px solid var(--verde-auto);
+}
+
+.formulario button {
+    background-color: var(--amarelo-auto);
+    color: var(--verde-auto);
+}
+
+.form-control {
+    background-color: #d0d0d0;
+    color: #1e2247;
+}
+
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}      
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+.alto-contraste{
+    background: linear-gradient(135deg, var(--azul-auto), #232323);
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+    transition: background 0.8s cubic-bezier(.4,0,.2,1);
+}
+.alto-contraste header, .alto-contraste footer, .alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+.alto-contraste .botao-inicio, .alto-contraste .formulario button, .alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo);
+}
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
+.alto-contraste .nav-img {
+    filter: invert(1) hue-rotate(180deg);
+}
+footer {
+    background: var(--verde-auto);
+    color: var(--amarelo-auto);
+    border-top: 3px solid var(--amarelo-auto);
+}
